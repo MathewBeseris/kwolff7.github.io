@@ -1,0 +1,15 @@
+body {
+	margin: 100px 0 0 0;
+	padding: 0;
+}
+form {
+	width: 45%;
+	margin: 0 auto;
+}
+button {
+	width: 100%;
+}
+#inputPhone {
+	border-color: #337ab7;
+	border-width: 2px;
+}

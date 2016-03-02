@@ -12,12 +12,19 @@
 </head>
 
 <body>
-	<header>
-    	<div class="container-fluid">
-	    	<h2 class="text-center">Phone Number Generator</h2>
+    <div class="title">
+        <div class="container-fluid">
+            <h2 class="text-center">Phone Number Generator</h2>
         </div>
-    </header>
+    </div>
     
+    <form>
+        <div class="form-group form-group-lg">
+            <input type="text" class="form-control input-lg " id="inputPhone" placeholder="123-456-7890">
+            <p class="help-block text-primary">Insert phone number to find possible words</p>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">Generate</button>
+    </form>
     
     
     <script src="js/bootstrap.min.js"></script>
