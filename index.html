@@ -45,10 +45,16 @@
             </div>
             
             <form>
-                <div class="form-group form-group-lg">
-                    <input type="text" class="form-control input-lg " id="inputPhone" placeholder="123-456-7890">
-                    <p class="help-block text-primary">Insert phone number to find possible words</p>
+                <div class="input-group input-group-lg">
+                	<input class="form-control input-lg inputPhone" type="text" placeholder="123-456-7890">
+                    <span class="input-group-addon inputPhone">
+                    	<a href="reverse.html"><i class="fa fa-exchange fa-rotate-90 text-primary"></i></a>
+                    </span>
                 </div>
+                <p class="help-block text-primary">Insert phone number to find possible words</p>
+                
+                
+                
                 <button type="submit" class="btn btn-primary btn-lg" id="btn-generate">Generate</button>
             </form>
         </div>

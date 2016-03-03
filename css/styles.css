@@ -21,7 +21,7 @@ form {
 	padding-top: 10px;
 	padding-left: 20px;
 }
-#inputPhone {
+.inputPhone {
 	border-color: #337ab7;
-	border-width: 2px;
+	border-width: 1px;
 }
