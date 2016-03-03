@@ -7,26 +7,61 @@
     <title>Phone Number Generator</title>
     <meta name="description" content="Programming II project from students at Skyline High School that converts phone numbers to words or the reverse of that." />
     
-	<link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Russo+One|Ruda" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/simple-sidebar.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <div class="title">
-        <div class="container-fluid">
-            <h2 class="text-center">Phone Number Generator</h2>
+	<div id="wrapper" class="toggled">
+    	<!-- Sidebar -->
+        <div id="sidebar-wrapper">
+        	<ul class="sidebar-nav">
+            	<li class="sidebar-brand">
+                	<a href="#">Generator</a>
+                </li>
+                <li>
+                	<a href="documentation.html">Documentation</a>
+                </li>
+                <li>
+                	<a href="creators.html">Creators</a>
+                </li>
+                <li>
+                	<a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+		
+        <div id="content-body">
+        	<div class="btn-sidebar">
+        		<a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars fa-4x"></i></a>
+            </div>
+            <div class="title">
+                <div class="container-fluid">
+                    <h1 class="text-center"><strong>Phone Number Generator</strong></h1>
+                </div>
+            </div>
+            
+            <form>
+                <div class="form-group form-group-lg">
+                    <input type="text" class="form-control input-lg " id="inputPhone" placeholder="123-456-7890">
+                    <p class="help-block text-primary">Insert phone number to find possible words</p>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg" id="btn-generate">Generate</button>
+            </form>
         </div>
     </div>
     
-    <form>
-        <div class="form-group form-group-lg">
-            <input type="text" class="form-control input-lg " id="inputPhone" placeholder="123-456-7890">
-            <p class="help-block text-primary">Insert phone number to find possible words</p>
-        </div>
-        <button type="submit" class="btn btn-primary btn-lg">Generate</button>
-    </form>
     
-    
+    <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
 </body>
 </html>

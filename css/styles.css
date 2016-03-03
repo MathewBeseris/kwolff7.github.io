@@ -1,13 +1,25 @@
 body {
-	margin: 100px 0 0 0;
+	font-family: 'Ruda', sans-serif;
+	margin: 0;
 	padding: 0;
+}
+.title {
+	padding: 100px 0 0 0;
+}
+.title h1 {
+	font-family: 'Russo One', sans-serif;
+	color: #337ab7;
 }
 form {
 	width: 45%;
 	margin: 0 auto;
 }
-button {
+#btn-generate {
 	width: 100%;
+}
+.btn-sidebar {
+	padding-top: 10px;
+	padding-left: 20px;
 }
 #inputPhone {
 	border-color: #337ab7;
