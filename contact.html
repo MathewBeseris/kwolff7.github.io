@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Phone Number Generator</title>
+    <meta name="description" content="Programming II project from students at Skyline High School that converts phone numbers to words or the reverse of that." />
+    
+	<link href="https://fonts.googleapis.com/css?family=Russo+One|Ruda" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/simple-sidebar.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    
+</head>
+
+<body>
+	<div id="wrapper" class="toggled">
+    	<!-- Sidebar -->
+        <div id="sidebar-wrapper">
+        	<ul class="sidebar-nav">
+            	<li class="sidebar-brand">
+                	<a href="index.html">Generator</a>
+                </li>
+                <li>
+                	<a href="documentation.html">Documentation</a>
+                </li>
+                <li>
+                	<a href="creators.html">Creators</a>
+                </li>
+                <li>
+                	<a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+		
+        <div id="content-body">
+        	<div class="btn-sidebar">
+        		<a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars fa-4x"></i></a>
+            </div>
+        	
+            <div class="contact">
+            	<div class="container">
+                	<div class="row">
+                    	<form role="form" action="" method="post" >
+                        	<div class="col-sm-10 col-sm-offset-1">
+                            	<div class="well well-sm"><strong><i class="glyphicon glyphicon-ok form-control-feeback"></i> Required Field</strong></div>
+                                <div class="form-group">
+                                	<label for="inputName">Name</label>
+                                    <div class="input-group">
+                                    	<input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
+                                        <span class="input-group-addon">&nbsp;<i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                	<label for="InputEmail">Email Address</label>
+                                    <div class="input-group">
+                                    	<input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required>
+                                        <span class="input-group-addon">&nbsp;<i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                	<label for="InputMessage">Message</label>
+                                    <div class="input-group">
+                                    	<textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                                    </div>
+                                </div>
+                                <div class="g-recaptcha col-sm-10 col-sm-offset-1" data-sitekey="6LdV7xkTAAAAAL1HxTkFUkH5wAHeRI8ViGx-twBs"></div>
+                                <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+                            </div>
+                        </form>
+                        
+                        
+                        
+                        
+                    	<div class="col-sm-4 col-sm-offset-4">
+                        	<div class="alert alert-success text-center"><strong><span class="glyphicon glyphicon-send"></span> Success! Message sent!</strong></div>
+                            <div class="alert alert-danger text-center"><strong><span class="glyphicon glyphicon-alert"></span> Error! Please check the inputs.</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      		
+            <footer>
+        		<p class="text-center">Coppyright &copy; 2016</p>
+        	</footer>
+        </div>
+    </div>
+    
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+</body>
+</html>
