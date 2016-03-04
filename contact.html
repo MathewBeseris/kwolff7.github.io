@@ -1,3 +1,9 @@
+<?php
+    if (isset($_POST["submit"])) {
+    	$inputName = $_POST['InputName'];
+        $inputEmail = $_POST[
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,6 +45,12 @@
         	<div class="btn-sidebar">
         		<a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars fa-4x"></i></a>
             </div>
+            
+            <div class="title">
+                <div class="container-fluid">
+                    <h1 class="text-center"><strong>Contact</strong></h1>
+                </div>
+            </div>
         	
             <div class="contact">
             	<div class="container">
@@ -64,16 +76,13 @@
                                 	<label for="InputMessage">Message</label>
                                     <div class="input-group">
                                     	<textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                                        <span class="input-group-addon">&nbsp;<i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
                                     </div>
                                 </div>
-                                <div class="g-recaptcha col-sm-10 col-sm-offset-1" data-sitekey="6LdV7xkTAAAAAL1HxTkFUkH5wAHeRI8ViGx-twBs"></div>
+                                <div class="g-recaptcha" data-sitekey="6LdV7xkTAAAAAL1HxTkFUkH5wAHeRI8ViGx-twBs"></div>
                                 <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-primary text-center col-sm-6 col-sm-offset-3">
                             </div>
                         </form>
-                        
-                        
-                        
                         
                     	<div class="col-sm-4 col-sm-offset-4">
                         	<div class="alert alert-success text-center"><strong><span class="glyphicon glyphicon-send"></span> Success! Message sent!</strong></div>
